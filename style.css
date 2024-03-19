@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-primary-nutmeg: hsl(14, 45%, 36%);
+  --clr-primary-darkraspberry: hsl(332, 51%, 32%);
+  --clr-neutral: hsl(0, 0%, 100%);
+  --clr-rosewhite: hsl(330, 100%, 98%);
+  --clr--eggshell: hsl(30, 54%, 90%);
+  --clr-lightgrey: hsl(30, 18%, 87%);
+  --clr-wengebrown: hsl(30, 10%, 34%);
+  --clr-darkcharcoal: hsl(24, 5%, 18%);
+}
+@font-face {
+  font-family: "Young Serif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+body {
+  background-color: var(--clr--eggshell);
+  min-height: 100vh;
+  width: 100%;
+  line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container {
+  width: 46rem;
+  background: var(--clr-neutral);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 130px 170px  215px  0.2px  335px 0.2px;
+  margin: 8rem 0;
+  padding: 3rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 1rem;
+}
+
+.prepartiontime {
+  background-color: var(--clr-rosewhite);
+  border-radius: 1rem;
+
+}
+h2 {
+    margin: 1rem 2rem;
+    color: var(--clr-primary-darkraspberry);
+    font-size: 1.1rem;
+    font-family: "Outfit";
+}
+ul {
+  padding-left: 4rem;
+}
+ul span {
+  font-weight: 700;
+  font-family: "Outfit";
+}
+ul li {
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+.brown{
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: var(--clr-primary-nutmeg);
+    margin: 0;
+}
+.brown ul{
+    padding-left: 2rem;
+}
+.ingredient ul{
+    padding-left: 2rem;
+}
+hr{
+    border: 0.5px solid var(--clr-lightgrey);
+}
+.instruction ol{
+    padding-left: 2rem;
+
+}
+.instruction ol li span{
+    font-weight: 700;
+    color:var(--clr-wengebrown);
+}
+ol li{
+    padding-left: 1rem;
+    margin: 0.5rem 0;
+}
+.Nutrition >p{
+    margin-top: 0.5rem;
+}
+dl.nutrition-list {
+    margin-top: 1rem;
+}
+
+dt, dd{
+    display: inline-block;
+    width: 250px;
+    margin: 0.7rem;
+    margin-left: 2rem;
+}
+dd{
+    font-weight: 700;
+    color: var(--clr-primary-nutmeg);
+}
+/* @media only screen and (max-width:735px){
+    body{
+        display: flex;
+        justify-content: center;
+
+    }
+    .container{
+        width: 40vw;
+        display: grid;
+
+        grid-template-rows: repeat(6,80px);
+        grid-template-columns:1fr;
+
+    }
+
+} */
+

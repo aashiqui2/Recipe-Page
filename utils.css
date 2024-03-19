@@ -1,0 +1,19 @@
+h1{
+    font-family: "Young Serif";
+    font-weight: 400;
+    font-size: 2.45rem;
+    margin-bottom: 0.5rem ;
+    color: var(--clr-darkcharcoal);
+}
+
+p, ul, ol, dl {
+    font-family: "Outfit";
+    color: var(--clr-wengebrown);
+    font-size: 1rem;
+   
+}
+
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
